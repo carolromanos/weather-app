@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/94f15a4f1f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form id="searchCity-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="City...."
+                class="form-control shadow-sm"
+                id="city-input"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <button class="btn btn-success w-100" id="current-location-button">
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
+        <h1 id="city"></h1>
+
+        <h2 id="date"></h2>
+    
+         <h3 id="description"></h3>
+        </ul>
+
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                alt="icon"
+                class="weather-icon float-left"
+              />
+
+              <div class="float-left">
+                <span class="temperature" id="temperature"></span>
+                <span class="units"> 
+                  <a href="#" id="celsius-link"> ºC</a> | 
+                  <a href="#" id="fahrenheit-link"> Fº</a> </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6" class="data">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-2">
+            Mon <br />
+            <i class="fas fa-cloud-sun icons"></i>
+          </div>
+          <div class="col-md-2">
+            Tue
+            <br />
+            <i class="fas fa-cloud-sun icons"></i>
+          </div>
+          <div class="col-md-2">
+            Wed<br />
+            <i class="fas fa-cloud-sun icons"></i>
+          </div>
+          <div class="col-md-2">
+            Thu<br />
+            <i class="fas fa-cloud-sun icons"></i>
+          </div>
+          <div class="col-md-2">
+            Fri<br />
+            <i class="fas fa-cloud-sun icons"></i>
+          </div>
+          <div class="col-md-2">
+            Sat<br />
+            <i class="fas fa-cloud-sun icons"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+   
+  </body>
+</html>
