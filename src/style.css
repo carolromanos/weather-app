@@ -58,3 +58,8 @@ li {
   font-size: 30px;
   color: rgb(240, 220, 132);
 }
+
+.sourceLink{
+  display: block;
+  text-align: center;
+}
