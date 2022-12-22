@@ -45,8 +45,10 @@ li:first-letter {
 
 .weather-app {
   padding: 20px;
-  border: 1px solid #dadde1;
-  border-radius: 5px;
+ 
+box-shadow: 	0px 0px 11px 1px rgba(255, 255, 255, 0.14);
+border:	1px solid rgba(0,0,0,0);
+border-radius:	4px;
 }
 
 .overview {
@@ -104,4 +106,9 @@ li:first-letter {
 .form-control{
   opacity: 0.8;
   color: #ffffffdc;
+}
+small{
+  display: block;
+  margin-top: 1em;
+  color: #b3b3b3;;
 }
